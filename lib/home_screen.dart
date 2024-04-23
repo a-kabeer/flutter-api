@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
   List data = [
@@ -23,7 +24,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('JsonData'),
+          title: const Text('JsonData'),
         ),
         body: ListView.builder(
           itemBuilder: (context, index) => ListTile(
